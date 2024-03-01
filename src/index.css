@@ -8,14 +8,13 @@ body {
 nav {
   background-color: black;
   color: white;
-  padding-top: 2.5em;
+  padding: 2em 3em;
 }
 .navlinks {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  padding-block: 2em;
-  padding-inline: 2.5em;
+  margin-top: 2em;
 }
 .logo {
   display: flex;
@@ -53,4 +52,25 @@ button {
   width: 100%;
 }
 @media (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navlinks {
+    gap: 1.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .description {
+    margin-inline: 6em;
+  }
+  .content-area {
+    margin-inline: 2em;
+  }
+}
+@media (min-width: 1440px) {
+  .description {
+    margin-inline: 21em;
+  }
 }
